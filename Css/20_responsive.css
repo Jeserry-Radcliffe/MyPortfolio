@@ -1,0 +1,165 @@
+@media screen and (min-width: 400px) {
+  .logo {
+    width: 50%;
+  }
+  .banner {
+    max-width: 100%;
+    min-height: 40vh;
+    background-image: linear-gradient(
+        rgba(15, 15, 16, 0.788),
+        rgba(17, 17, 18, 0.583)
+      ),
+      url("../resources/header-background.jpg");
+    background-position: 5% 0%;
+    background-size: no-repeat;
+    background-size: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  nav {
+    padding: 0 50px;
+    margin: 10px 30px;
+  }
+  .logo {
+    width: 60%;
+    font-size: 20px;
+    text-align: right;
+  }
+  .banner {
+    max-width: 100%;
+    min-height: 60vh;
+    background-image: linear-gradient(
+        rgba(15, 15, 16, 0.788),
+        rgba(17, 17, 18, 0.583)
+      ),
+      url("../resources/header-background.jpg");
+    background-position: 5% 0%;
+    background-size: no-repeat;
+    background-size: 100%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align: center;
+  }
+  .banner h1 {
+    font-family: "Kay Pho Du", serif;
+    margin: 50px 0 0;
+    font-size: 60px;
+    /* transform: scale(1.5); */
+  }
+  .banner-links {
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  .homepage-aboutMe {
+    padding: 50px 10%;
+  }
+  .nav-links {
+    padding: 15% 0;
+    font-size: 25px;
+  }
+  .input-area {
+    top: 30%;
+    left: 26%;
+  }
+  .jes-gradPhoto {
+    display: block;
+    /* aspect-ratio: 4 / 3; */
+  }
+  .homepage-aboutMe h2 {
+    font-size: 35px;
+  }
+  .largeScreen-nav {
+    display: block;
+  }
+  .hamburger {
+    display: none;
+  }
+  .homepage-hrzLine {
+    width: 80%;
+  }
+  .slider {
+    width: 70%;
+    margin: 3% auto;
+  }
+  /* .desktop-flex {
+    display: flex;
+    width: 80%;
+    margin: 20px auto;
+    justify-content: space-around;
+    gap: 40px;
+  } */
+  .projDesc h3 {
+    font-size: 30px;
+    margin: auto;
+    width: 80%;
+  }
+  .projDesc p {
+    width: 80%;
+    font-size: 18px;
+    margin: auto;
+  }
+  .others {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .lang-used {
+    width: 80%;
+    margin: 20px auto;
+    align-items: left;
+    text-align: left;
+  }
+  .soft-used {
+    width: 80%;
+    margin: 20px auto;
+    align-items: left;
+  }
+  .lang-used p {
+    width: 20%;
+    margin: 0;
+    text-align: left;
+  }
+  .soft-used p {
+    width: 20%;
+    margin: 0;
+    text-align: left;
+  }
+  .lang-container {
+    width: 70%;
+  }
+  .soft-container {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .lang-used img,
+  .soft-used img {
+    width: 8%;
+    height: 5%;
+    padding: 2px;
+  }
+  .others {
+    width: 80%;
+    margin:0 auto;
+  }
+  .box2 {
+    margin:0;
+  }
+}

@@ -1,0 +1,63 @@
+.main_container {
+  min-width: 100%;
+  min-height: 40vh;
+}
+.contactMe {
+  padding: 33% 5% 0;
+  /* text-align: center; */
+}
+.contactMe h2 {
+ padding: 0 0 0 2%;
+}
+.inputs {
+  margin: 5% 0 0 5%;
+}
+.inputs label {
+}
+.inputs input {
+  width: 90%;
+  padding: 10px;
+  border-radius: 20px;
+  outline: 1px solid whitesmoke;
+  font-size: 16px;
+  color: white;
+  border: none;
+  margin: 15px 0 15px 0;
+  background-color: transparent;
+}
+.inputs textarea {
+  width: 90%;
+  min-height: 20vh;
+  padding: 15px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+  margin: 15px 0 15px 0;
+  background-color: transparent;
+  outline: 1px solid whitesmoke;
+  color: white;
+  font-size: 16px;
+}
+.submit-msg {
+  min-width: 25%;
+  max-height: 100%;
+  font-size: 15px;
+  background-color: transparent;
+  border-radius: 10px;
+  border: none;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  transition: 0.5s ease;
+  margin: 0 0 0 0;
+  padding: 10px 30px 10px;
+}
+.submit-msg:hover {
+  /* background-color: #948979; */
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+}
+.btn-submit {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 0 5% 0;
+}

@@ -1,0 +1,182 @@
+.banner {
+  max-width: 100%;
+  min-height: 30vh;
+  background-image: linear-gradient(
+      rgba(15, 15, 16, 0.788),
+      rgba(17, 17, 18, 0.583)
+    ),
+    url("../resources/header-background.jpg");
+  background-position: center;
+  background-size: no-repeat;
+  background-size: 100%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  text-align: center;
+}
+.banner h1 {
+  font-family: "Kay Pho Du", serif;
+  margin: 80px 0 0;
+}
+.banner-links {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 18px;
+  font-weight: 400;
+
+  margin: 10px 0 0 0;
+  text-align: center;
+  transition: none;
+}
+.banner-links li {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  /* transition: 0.5s ease; */
+}
+.banner-links li a {
+  text-decoration: none;
+  color: white;
+}
+.banner-links li a:hover {
+  color: var(--hover);
+}
+.banner-links img {
+  width: 25px;
+  height: 25px;
+}
+.homepage-aboutMe {
+  /* width:90%; */
+  padding: 30px;
+  /* margin: 0 auto; */
+}
+.homepage-aboutMe h2 {
+  /* font-weight: 500; */
+}
+.homepage-description {
+  font-weight: 300;
+  font-size: 16px;
+  padding: 10px 10px 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  /* text-align: center; */
+  align-items: center;
+  gap: 50px;
+}
+.jes-gradPhoto {
+  display: none;
+  width: 30%;
+  min-height: 20%;
+  border-radius: 20px;
+}
+.homepage-hrzLine {
+  width: 90%;
+  margin: auto;
+}
+.slider {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 20px auto; /* centers horizontally */
+  width: 90%; /* or a fixed px width like 800px */
+  z-index: 1;
+}
+.slides {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  z-index: 1;
+}
+.myProject0 {
+  width: 100%;
+  height: 100%;
+  flex: 0 0 100%; /* each slide = 100% width of slider */
+}
+.myProject0 img {
+  width: 100%;
+  /* height: 300px; */
+  aspect-ratio: 16 / 9;
+  object-fit: cover; /* fills container without distortion */
+  display: block; /* removes inline gap */
+  border-radius: 12px;
+}
+.btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px; /* fixed width */
+  height: 30px; /* fixed height (same as width) */
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 18px;
+  border-radius: 50%; /* makes it a circle */
+  user-select: none;
+  display: flex; /* centers the arrow */
+  align-items: center;
+  justify-content: center;
+}
+.btn:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+.projDesc {
+  width: 85%;
+  height: auto;
+  margin: 5px auto;
+  text-align: left;
+}
+.projDesc p {
+  padding: 10px 0;
+  font-weight: 300;
+}
+.lang-used p {
+  font-size: 15px;
+  margin: 0 3px 0 0;
+  width: 30%;
+  text-align: left;
+  font-size: 12px;
+}
+.soft-used p {
+  margin: 0 10px 0 0;
+  width: 30%;
+  text-align: left;
+  font-size: 12px;
+}
+.lang-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+.soft-container {
+  width: 50%;
+  display: flex;
+  justify-content: flex-start;
+  text-align: center;
+}
+.lang-used,
+.soft-used {
+  display: flex;
+  text-align: center;
+  align-items: center;
+}
+.lang-used img,
+.soft-used img {
+  width: 15%;
+  height: auto;
+  padding: 0px 5px;
+}
+.others {
+  width: 100%;
+}

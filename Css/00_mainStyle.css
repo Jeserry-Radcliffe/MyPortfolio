@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Phudu:wght@300..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: 0; */
+  /* font-family: "TikTok Sans", sans-serif; */
+  /* font-family: "Open Sans", sans-serif; */
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Kay Pho Du", serif; */
+}
+
+:root {
+  --dark-blue: #070f2b;
+  --hover: #ffcc00;
+  --pink: #ea5b6f;
+  --blueDark: #021526;
+}
+
+body {
+  color: white;
+  background-color: #212121;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+  /* background: rgba(0, 0, 0, 0.6); */
+  backdrop-filter: blur(5px); /* blur effect */
+  -webkit-backdrop-filter: blur(10px); /* for Safari */
+  /* border: 1px solid rgba(255, 255, 255, 0.2); */
+  border-radius: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin: 10px auto;
+
+  width: 80%;
+  height: 60px;
+  position: fixed;
+  top: 2%;
+  left: 5%;
+  z-index: 1000;
+}
+.nav-links {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(0px); /* start with no blur */
+  opacity: 0; /* start hidden */
+  visibility: hidden; /* not focusable/clickable */
+  pointer-events: none; /* prevent clicks */
+  transition: opacity 0.3s ease, backdrop-filter 0.3s ease;
+
+  padding: 55% 0;
+  font-size: 20px;
+  text-align: center;
+  z-index: 999;
+}
+.nav-links.active {
+  backdrop-filter: blur(5px); /* animate blur */
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1; /* fade in */
+  visibility: visible; /* allow interactions */
+  pointer-events: auto;
+}
+.nav-links a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  transition: 0.3s ease;
+  margin: 5%;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+.nav-links a:hover {
+  color: var(--hover);
+}
+.hamburger {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+
+  /* remove transition on load */
+  transition: none;
+}
+.hamburger span {
+  display: block; /* makes each line a block so it can have width/height */
+  height: 4px; /* line thickness */
+  width: 30px; /* line width */
+  background-color: #ffffff; /* line color */
+  margin: 5px 0; /* spacing between lines */
+  border-radius: 2px; /* rounded edges */
+  transition: all 0.3s ease; /* smooth animation */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0; /* middle line disappears */
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -8.5px);
+}
+
+.hamburger.ready span {
+  /* add animation only after JS adds "ready" */
+  transition: all 0.3s ease;
+}
+
+.logo {
+  width: 60%;
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+footer {
+  min-height: 60vh;
+}
+.foot-parent0 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  /* margin: 0 15%; */
+  padding: 30px 10px 0 40px;
+}
+.foot-navlink {
+  width: 100%;
+  height: 100%;
+  /* margin: 1% 0% 1% 0%; */
+  font-weight: 300;
+  font-size: 18px;
+  /* text-transform: uppercase; */
+}
+.foot-navlink li {
+  list-style-type: none;
+  margin-bottom: 2px;
+  transition: 0.5s ease;
+}
+.foot-navlink a:hover {
+  color: var(--hover);
+}
+.foot-navlink ul {
+  padding: 10px;
+}
+.foot-navlink a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+.foot-title {
+  font-size: 30px;
+  font-weight: 600;
+  padding: 20px 0 0 0;
+}
+.credits {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+}
+.socials {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px 0 5px 0;
+}
+.socials img {
+  width: 10%;
+  height: 10%;
+  margin: 5px;
+}
+.email_box {
+  width: 90%;
+  height: 100%;
+  color: whitesmoke;
+}
+.email_box p {
+  font-size: 15px;
+  color: whitesmoke;
+  padding: 0 0 5px;
+  /* margin: 0 0 0% 0; */
+}
+.email_box input {
+  min-width: 70%;
+  max-height: 100%;
+  background-color: transparent;
+  border: none;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  color: white;
+  font-size: 16px;
+}
+.input-btn {
+  display: flex;
+}
+.input-btn button {
+  min-width: 25%;
+  max-height: 100%;
+  font-size: 15px;
+  background-color: transparent;
+  border: none;
+  outline: 1px solid rgba(255, 255, 255, 0.5);
+  color: white;
+  transition: 0.5s ease;
+}
+.input-btn button:hover {
+  background-color: #948979;
+}
+.creditsP {
+  font-size: 15px;
+  padding: 5px 20px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.input-area {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 20%;
+  left: 10%;
+  backdrop-filter: blur(0px); /* start with no blur */
+  background-color: #070f2b;
+  border-radius: 15px;
+  transition: opacity 0.3s ease, backdrop-filter 0.3s ease;
+  z-index: 1002;
+  padding: 20px;
+  width: 70%;
+
+  backdrop-filter: blur(5px); /* animate blur */
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 1; /* fade in */
+  visibility: visible; /* allow interactions */
+  pointer-events: auto;
+}
+.input-area label {
+  padding: 0 0 15px;
+  font-size: 12px;
+}
+.input-area input {
+  width: 90%;
+  height: 40px;
+  padding: 0 0px 0px 15px;
+  border-radius: 20px;
+  outline: none;
+  border: none;
+}
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background: none;
+  border: none;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.close-btn:hover {
+  color: red;
+}
+.show-password {
+  display: flex;
+  margin: 10px 0 0 10px;
+  font-size: 14px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  align-items: center;
+}
+.show-password input {
+  margin-right: 10px;
+  width: 20px;
+  border-radius: 20px;
+}
+.submit-pass {
+  width: 40%;
+  margin: 15px auto;
+  padding: 5px;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  font-size: 15px;
+}
+.noDecor {
+  color: white;
+  text-decoration: none;
+}
+.others {
+  margin: 0 0 0 7.5%;
+}
+.largeScreen-nav {
+  width: 70%;
+  display: none;
+}
+.largeScreen-nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  font-size: 18px;
+  gap: 10px;
+}
+.largeScreen-nav a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 500;
+  color: white;
+  transition: 0.3s ease;
+  margin: 5%;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+  transition: 0.3s ease;
+}
+.largeScreen-nav a:hover {
+  color: var(--hover);
+}
