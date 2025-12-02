@@ -3,73 +3,76 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Credentials - Mark Jeserry</title>
+    <title>Gallery</title>
     <link rel="stylesheet" href="../Css/00_mainStyle.css" />
-    <link rel="stylesheet" href="../Css/06_contact.css" />
     <link rel="stylesheet" href="../Css/20_responsive.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
   </head>
   <body>
-    <nav>
+    <nav class="w-[90%]">
       <button class="hamburger" aria-label="Menu" id="menuBtn">
         <span></span>
         <span></span>
         <span></span>
       </button>
 
-      <div class="largeScreen-nav">
-        <ul>
-          <li><a href="../Html/index.html">Home</a></li>
-          <li><a href="../Html/02_about.html">About</a></li>
-          <li>
-            <a href="#" id="desktop-protected-link">Credentials</a>
-          </li>
-          <li><a href="../Html/04_projects.html">Projects</a></li>
-          <li><a href="">Gallery</a></li>
-          <li><a href="../Html/06_contact.html">Contact</a></li>
-        </ul>
-      </div>
-
-      <div class="logo">MY CONTACTS</div>
+      <div class="logo">MY GALLERY</div>
     </nav>
 
     <div class="nav-links" id="navMenu">
       <ul>
         <li><a href="../Html/index.html">Home</a></li>
         <li><a href="../Html/02_about.html">About</a></li>
-        <li><a href="" id="protected-link">Credentials</a></li>
+        <li>
+          <a href="#">Credentials</a>
+        </li>
         <li><a href="../Html/04_projects.html">Projects</a></li>
         <li><a href="../Html/05_gallery.html">Gallery</a></li>
         <li><a href="../Html/06_contact.html">Contact</a></li>
       </ul>
     </div>
 
-    <div class="main_container">
-      <div class="contactMe">
-        <h2>Leave A Message</h2>
-        <!-- <p>
-          If you have any questions or would like to work together, feel free to
-          contact me via the form below.
-        </p> -->
-        <div class="inputs">
-          <label for="">Your Email:</label> <br />
-          <input type="text" placeholder="Your email" name="email" /> <br />
-          <label for="">Subject:</label> <br />
-          <input type="text" placeholder="Subject" name="subject" /> <br />
-          <label for="">Message:</label> <br />
-          <textarea
-            placeholder="Input your message: I'll be happy to read them :>"
-            name="message"
-          ></textarea>
+    <main class="pt-[35%]">
+      <h1 class="text-xl px-[7%]">Trainings/Seminars</h1>
+      <br>
+      <div class="mx-[7%]">
+        <hr>
+        <div class="my-3">
+          <p class="mb-2 text-sm">Ctrl+Alt+Succeed : Careers In Computer Science</p>
+          <img class="aspect-3/2 rounded-md" src="../resources/images/cert_Ctrl_Alt-Succeed.png" alt="">
         </div>
-        <div class="btn-submit">
-          <button class="submit-msg" id="submit-msg">SUBMIT</button>
+        <hr>
+        <div class="my-3">
+          <p class="mb-2 text-sm">DICT : Digital Startup Development and Acceleration Program (DSDAP)</p>
+          <img class="aspect-3/2 rounded-md" src="../resources/images/cert_DSDAP.png" alt="">
+        </div>
+        <hr>
+        <div class="my-3">
+          <p class="mb-2 text-sm">Gen Lit : Responsible Digital Citizenship</p>
+          <img  class="aspect-3/2 rounded-md" src="../resources/images/cert_Gen_Lit_Responsible_Digital_Citizenship.png" alt="">
+        </div>
+        <hr>
+        <div class="my-3">
+          <p class="mb-2 text-sm">URS Orientation</p>
+          <img  class="aspect-3/2 rounded-md" src="../resources/images/cert_URS_Orientation.png" alt="">
         </div>
       </div>
-    </div>
+
+      <div class="">
+        <!-- <h1 class="text-xl px-[7%]">School Projects</h1> -->
+        <h1></h1>
+        <!-- <img src="../resources/images/dump_ayen.png" alt="">
+        <img src="../resources/images/dump_dodskie.png" alt=""> -->
+      </div>
+    </main>
 
     <footer>
       <div class="foot-parent0">
@@ -86,18 +89,17 @@
             <li><a href="../Html/index.html">Home</a></li>
             <li><a href="../Html/02_about.html">About</a></li>
             <li>
-              <a href="" id="desktop-protected-link">Credentials</a>
+              <a href="#" id="footer-protected-link">Credentials</a>
             </li>
             <li><a href="../Html/04_projects.html">Projects</a></li>
             <li><a href="../05_gallery.html">Gallery</a></li>
-            <li>
-              <a href="../Html/06_contact.html" style="color: #ffcc00"
-                >Contact</a
-              >
-            </li>
+            <li><a href="../Html/06_contact.html">Contact</a></li>
           </ul>
         </div>
       </div>
+
+      <br /><br /><br /><br /><br />
+
       <div class="foot-parent-mobile">
         <div class="email_box">
           <p>Leave an email for me to contact.</p>
@@ -112,10 +114,12 @@
             <li><a href="../Html/index.html">Home</a></li>
             <li><a href="../Html/02_about.html">About</a></li>
             <li>
-              <a href="" id="footer-protected-link">Credentials</a>
+              <a href="" id="protected-link">Credentials</a>
             </li>
-            <li><a href="..Html/03_projects.html">Projects</a></li>
-            <li><a href="../Html/05_gallery.html">Gallery</a></li>
+            <li><a href="03_projects.html">Projects</a></li>
+            <li>
+              <a href="05_gallery.html" style="color: #ffcc00">Gallery</a>
+            </li>
             <li><a href="../Html/06_contact.html">Contact</a></li>
           </ul>
         </div>
@@ -132,6 +136,6 @@
         </p>
       </div>
     </footer>
+    <script src="../Js/script.js"></script>
   </body>
-  <script src="../Js/script.js"></script>
 </html>
