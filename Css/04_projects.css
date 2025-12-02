@@ -2,13 +2,13 @@
   width: 100%;
   min-height: 100vh;
   margin: 0;
-  padding: 30% 0 0;
+  padding: 0% 0 0;
 }
 .myProjects_container {
   width: 90%;
   /* max-width: 800px; */
-  margin: 0 auto;
-  padding: 0 auto;
+  margin: 35% auto;
+  padding: 0% auto;
   text-align: center;
   z-index: 1;
 }
@@ -79,4 +79,8 @@
 }
 .projDesc p {
     padding: 10px 0; 
+}
+.proj-link {
+  color:white;
+  font-family: "Poppins", sans-serif;
 }

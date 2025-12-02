@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kay+Pho+Du:wght@400;500;600;700&family=Phudu:wght@300..900&display=swap");
+@import "tailwindcss";
 * {
   margin: 0;
   padding: 0;
@@ -116,8 +117,8 @@ nav {
 }
 
 .logo {
-  width: 60%;
-  text-align: center;
+  width: 70%;
+  text-align: RIGHT;
   font-weight: 600;
   font-size: 20px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
@@ -125,18 +126,23 @@ nav {
 
 footer {
   min-height: 60vh;
+  width: 100%;
 }
-.foot-parent0 {
+/* .foot-parent0 {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-around;
-  /* margin: 0 15%; */
+  margin: 0 15%;
   padding: 30px 10px 0 40px;
-}
+} */
+ .foot-parent0 {
+  display: none;
+ }
 .foot-navlink {
-  width: 100%;
+  width: 80%;
   height: 100%;
+  margin: 0 auto;
   /* margin: 1% 0% 1% 0%; */
   font-weight: 300;
   font-size: 18px;
@@ -162,6 +168,16 @@ footer {
   font-weight: 600;
   padding: 20px 0 0 0;
 }
+.foot-parent-mobile {
+  display: flex;
+  flex-direction: column;
+
+  width: 99%;
+  margin: 0 auto;
+}
+.foot-parent0 {
+  display: none;
+}
 .credits {
   display: flex;
   flex-direction: column;
@@ -183,19 +199,20 @@ footer {
   margin: 5px;
 }
 .email_box {
-  width: 90%;
+  width: 80%;
   height: 100%;
   color: whitesmoke;
+  margin: 10px auto;
 }
 .email_box p {
   font-size: 15px;
   color: whitesmoke;
-  padding: 0 0 5px;
+  padding: 0 0 10px;
   /* margin: 0 0 0% 0; */
 }
 .email_box input {
   min-width: 70%;
-  max-height: 100%;
+  /* min-height: 5vh; */
   background-color: transparent;
   border: none;
   outline: 1px solid rgba(255, 255, 255, 0.5);

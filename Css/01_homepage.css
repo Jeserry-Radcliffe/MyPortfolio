@@ -16,6 +16,7 @@
 
   justify-content: center;
   text-align: center;
+  /* position:relative; */
 }
 .banner h1 {
   font-family: "Kay Pho Du", serif;
@@ -51,7 +52,7 @@
 }
 .homepage-aboutMe {
   /* width:90%; */
-  padding: 30px;
+  padding: 30px 30px 10px;
   /* margin: 0 auto; */
 }
 .homepage-aboutMe h2 {
@@ -82,7 +83,7 @@
   position: relative;
   overflow: hidden;
   border-radius: 12px;
-  margin: 20px auto; /* centers horizontally */
+  margin: 0px auto; /* centers horizontally */
   width: 90%; /* or a fixed px width like 800px */
   z-index: 1;
 }
@@ -140,18 +141,21 @@
   padding: 10px 0;
   font-weight: 300;
 }
+.projDesc h3 {
+  padding: 20px 0 0;
+}
 .lang-used p {
   font-size: 15px;
   margin: 0 3px 0 0;
-  width: 30%;
+  width: 35%;
   text-align: left;
   font-size: 12px;
 }
 .soft-used p {
-  margin: 0 10px 0 0;
-  width: 30%;
+  margin: 0 3px 0 0;
+  width: 35%;
   text-align: left;
-  font-size: 12px;
+  font-size: 13px;
 }
 .lang-container {
   width: 50%;
@@ -163,7 +167,7 @@
   width: 50%;
   display: flex;
   justify-content: flex-start;
-  text-align: center;
+  text-align:left;
 }
 .lang-used,
 .soft-used {
@@ -173,7 +177,7 @@
 }
 .lang-used img,
 .soft-used img {
-  width: 15%;
+  width: 20%;
   height: auto;
   padding: 0px 5px;
 }
