@@ -54,20 +54,31 @@
           If you have any questions or would like to work together, feel free to
           contact me via the form below.
         </p> -->
-        <div class="inputs">
-          <label for="">Your Email:</label> <br />
-          <input type="text" placeholder="Your email" name="email" /> <br />
-          <label for="">Subject:</label> <br />
-          <input type="text" placeholder="Subject" name="subject" /> <br />
-          <label for="">Message:</label> <br />
-          <textarea
-            placeholder="Input your message: I'll be happy to read them :>"
-            name="message"
-          ></textarea>
-        </div>
-        <div class="btn-submit">
-          <button class="submit-msg" id="submit-msg">SUBMIT</button>
-        </div>
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+          id="submit-email"
+        >
+          <input
+            type="hidden"
+            name="access_key"
+            value="97674e75-f296-4b8f-8af4-030253ad6d2f"
+          />
+          <div class="inputs">
+            <label for="">Your Email:</label> <br />
+            <input type="text" placeholder="Your email" name="email" /> <br />
+            <label for="">Your Name:</label> <br />
+            <input type="text" placeholder="Name" name="name" /> <br />
+            <label for="">Message:</label> <br />
+            <textarea
+              placeholder="Input your message: I'll be happy to read them :>"
+              name="message"
+            ></textarea>
+          </div>
+          <div class="btn-submit">
+            <button class="submit-msg" id="submit-email">SUBMIT</button>
+          </div>
+        </form>
       </div>
     </div>
 
